@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewModel"
+    app:cardBackgroundColor="#494949"
+    app:cardCornerRadius="20dp"
+    app:cardUseCompatPadding="true"
+    android:layout_gravity="center"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+               <Button
+                   android:background="@drawable/ic_person_circle_outline"
+                   android:layout_marginEnd="10dp"
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"/>
+                <TextView
+                    android:id="@+id/modelName"
+                    android:text="Terry Watson"
+                    android:textSize="14sp"
+                    android:textColor="@color/JlighterGrey"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/modelType"
+                android:text="Personal Trainer"
+                android:textColor="@color/Jyellow"
+                android:textSize="24sp"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:weightSum="1"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="0.3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="LEVEL"
+                        android:textColor="@color/Jyellow"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/roboto_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/level"
+                        android:text="2/5"
+                        android:textColor="@color/Jyellow"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/roboto_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_weight="0.3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="SESSIONS"
+                        android:textColor="@color/Jyellow"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/roboto_light"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/session"
+                        android:text="9,432"
+                        android:textColor="@color/Jyellow"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/roboto_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent">
+                    <com.github.mikephil.charting.charts.RadarChart
+                        android:id="@+id/chartModel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:weightSum="1"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent">
+                    <Button
+                        android:id="@+id/btn_workout"
+                        android:text="LET'S GO"
+                        android:textSize="22sp"
+                        android:textColor="@color/JdarkGrey"
+                        android:fontFamily="@font/roboto_bold"
+                        android:background="@drawable/btn_model"
+                        android:layout_weight="0.55"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#6200EE</color>-->
+<!--    <color name="colorPrimaryDark">#3700B3</color>-->
+<!--    <color name="colorAccent">#03DAC5</color>-->
+    <color name="JdarkerGrey">#2D2D2E</color>
+    <color name="JdarkGrey">#494949</color>
+    <color name="JlightGrey">#919191</color>
+    <color name="JlighterGrey">#B8B8B8</color>
+    <color name="Jyellow">#E5A947</color>
+    <color name="Jred">#DA521A</color>
+    <color name="Jgreen">#1EBCD1</color>
+</resources>

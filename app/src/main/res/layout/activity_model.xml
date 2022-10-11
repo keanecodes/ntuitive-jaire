@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/JdarkerGrey"
+    android:weightSum="1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sg.ntuitive.jaire.main.ModelActivity">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/previousActivity"
+            android:gravity="end"
+            android:background="@drawable/ic_round_arrow_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:text="Choose Models"
+            android:textColor="@color/Jyellow"
+            android:textSize="24sp"
+            android:fontFamily="@font/roboto_bold"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="30dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        app:layout_anchor="@id/action_bar_container">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:background="@drawable/tab_background"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabIndicatorHeight="0dp"
+            app:tabPadding="5dp"
+            app:tabMode="fixed"
+            app:tabRippleColor="@null"
+            app:tabSelectedTextColor="@color/Jyellow"
+            app:tabTextAppearance="@style/TabTextAppearance" />
+
+    </RelativeLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/modelPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="bottom"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        android:paddingStart="20dp"
+        android:paddingEnd="40dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"/>
+
+</LinearLayout>

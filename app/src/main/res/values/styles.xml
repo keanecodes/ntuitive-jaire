@@ -1,0 +1,25 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/JdarkerGrey</item>
+        <item name="colorPrimaryDark">@color/JdarkerGrey</item>
+        <item name="colorAccent">@color/Jyellow</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/JdarkerGrey</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+</resources>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Jaire</string>
+    <string name="connect_btn">
+        <font face="roboto_bold" size="19">TAP TO CONNECT</font>\n\<font face="roboto_medium" size="14">SHIMMER DEVICE(S)</font>
+    </string>
+</resources>
